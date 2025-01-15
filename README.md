@@ -25,6 +25,7 @@ msix_config:
     force_update_from_any_version: false
 
 ``` 
-- Now we need a certificate to verify our aff as trusted in the device so we need to create new self signed certificate and install it in our local machine we can view our self signed certificate in Microsoft Management Console by selecting certificates section
-- now we need to create the package and publish it by running `msix package cli tool` commnds `dart run msix:create` to create package and `dart run msix:publish` to push updates to installed applications
-- once these steps are completed we can run the `.appinstaller` file to install our published application to our device and when ever we make changes to our code and publish it the application will update automatically
+- Now we need a certificate to verify our application as trusted in windows, so we need to create new self signed certificate and install it in our local machine.
+- Once we create our certificate and signed our package, we can view our self signed certificate in Microsoft Management Console by selecting certificates section (local computer).
+- Now we need to create the package and publish it by running `msix package cli tool` commnds `dart run msix:create` to create package and `dart run msix:publish` to push our application updates.
+- Once these steps are completed we can run the `<example_app>.appinstaller` file to install our published application to our device and when ever we make changes to our code and publish it `dart run msix:publish`, our installed application in windows will update automatically.
