@@ -1,5 +1,5 @@
 ### Setting up MSIX package installer for windows distribution
-#### This repo walks you through how to distribute windows application by packagint it in msix package installer.
+#### This repo walks you through how to distribute windows application by packaging it as msix package installer.
 
 > Complete step by step documentation will be updated in future!
 
