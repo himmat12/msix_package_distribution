@@ -1,0 +1,48 @@
+name: counter_app
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  msix: ^3.16.8
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+# msix configuration
+msix_config:
+  display_name: Counter App
+  publisher_display_name: Himmat Rai
+  identity_name: company.suite.counterapp
+  msix_version: 1.0.0.0
+  capabilities: internetClient, location, microphone, webcam
+  certificate_path: c:\Users\himmat\Desktop\counter_app_intaller\TestCert_2024-01-14_himmat.pfx
+  certificate_password: 1234
+  app_installer:
+    publish_folder_path: c:\Users\himmat\Desktop\counter_app_intaller
+    hours_between_update_checks: 0
+    automatic_background_task: true
+    update_blocks_activation: true
+    show_prompt: true
+    force_update_from_any_version: false

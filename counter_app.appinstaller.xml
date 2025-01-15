@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- app installer settings -->
+<AppInstaller
+  xmlns="http://schemas.microsoft.com/appx/appinstaller/2018"
+  Uri="c:\Users\himmat\Desktop\counter_app.appinstaller"
+  Version="1.0.0.0">
+
+  <!-- msix package settings -->
+  <MainPackage
+    Name="company.suite.counterapp"
+    Version="1.0.0.0"
+    Publisher="CN=Msix Testing, O=Msix Testing Corporation, S=Some-State, C=US"
+    Uri="c:\Users\himmat\Desktop\versions\counter_app_1.0.0.0.msix"
+    ProcessorArchitecture="x64" />
+
+  <!-- update settings -->
+  <UpdateSettings>
+    <OnLaunch
+      HoursBetweenUpdateChecks="0"
+      UpdateBlocksActivation="true"
+      ShowPrompt="true" />
+
+    <AutomaticBackgroundTask />
+    <ForceUpdateFromAnyVersion>true</ForceUpdateFromAnyVersion>
+  </UpdateSettings>
+
+  <!-- auto update settings -->
+  <!-- <UpdateUris>
+    <UpdateUri>https://www.contoso.com/Installers/MainApp.AppInstaller</UpdateUri>
+    <UpdateUri>\\ServerName\Share\Installers\MainApp.AppInstaller</UpdateUri>
+  </UpdateUris> -->
+
+  <!-- auto repair settings -->
+  <!-- <RepairUris>
+    <RepairUri></RepairUri>
+    <RepairUri></RepairUri>
+  </RepairUris> -->
+
+</AppInstaller>
